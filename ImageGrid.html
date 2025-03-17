@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Grid</title>
+  <link rel="stylesheet" href="path/to/bootstrap.min.css"> <!-- Link to your local Bootstrap CSS file -->
+  <style>
+    /* Custom styles for the image grid */
+    .image-grid {
+      margin-top: 20px;
+    }
+
+    .image-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .image-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container image-grid">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item">
+          <img src="coffeeimg/expresso.jpg" alt="expresso">
+          <div class="overlay">
+            <div class="overlay-text">Image 1</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item"><img src="coffeeimg/expresso.jpg" alt="expresso">
+          <div class="overlay">
+            <div class="overlay-text">Image 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item">
+          <img src="path/to/image3.jpg" alt="Image 3">
+          <div class="overlay">
+            <div class="overlay-text">Image 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item">
+          <img src="path/to/image4.jpg" alt="Image 4">
+          <div class="overlay">
+            <div class="overlay-text">Image 4</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item">
+          <img src="path/to/image5.jpg" alt="Image 5">
+          <div class="overlay">
+            <div class="overlay-text">Image 5</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-item">
+          <img src="path/to/image6.jpg" alt="Image 6">
+          <div class="overlay">
+            <div class="overlay-text">Image 6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="path/to/bootstrap.bundle.min.js"></script> <!-- Link to your local Bootstrap JS file -->
+</body>
+</html>

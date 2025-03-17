@@ -1,0 +1,81 @@
+/*h1
+{
+	color: red;
+	text-align: center;
+}
+.para1 
+{
+	color: blue;
+	font-size: 20px;
+
+}
+#coffee 
+{
+	width: 400px;
+	height: auto;
+	border-radius: 10px 80px;
+	border: 2px dotted black;
+}*/
+*
+{
+	margin: 0;
+}
+.header, .footer
+{
+	
+	background-color: red;
+	color: white;
+	padding: 2%;
+	clear: both;
+
+}
+.menu ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+.menu li a 
+{
+	text-decoration: none;
+	font-size: 25px;
+}
+.menu li 
+{
+	padding: 10px;
+	background-color: red;
+	color: white;
+	margin-bottom: 8px;
+}
+.menu
+{
+	width: 25%;
+	padding: 5%;
+	float: left;
+}
+.content 
+{
+	width: 50%;
+	float: left;
+	
+}
+
+.add 
+{
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	gap: 20px;
+}
+.para1,.img1 
+{
+	width: 600px;
+}
+.img1 img 
+{
+	width: 100%;
+}

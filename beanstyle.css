@@ -1,0 +1,213 @@
+body
+{
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header, footer
+{
+	background-color: darkred;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+}
+nav ul 
+{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+nav ul li 
+{
+	margin: 0 15px;
+
+}
+nav ul li a 
+{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a:hover 
+{
+	text-decoration: underline;
+}
+
+/*shoppingcart*/
+
+.container
+{
+	width: 800px;
+	margin: auto;
+}
+.cartcol1 
+{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+	background-color: darkred;
+
+}
+.cartcol1 img 
+{
+	width: 300px;
+	height: auto;
+}
+.cartcol2
+{
+	padding: 20px;
+	width: 100%;
+}
+
+.cartcol3 hr 
+{
+	margin-bottom: 30px;
+}
+.cartcol3
+{
+	padding: 20px;
+	height: 250px;
+	
+
+}
+.main 
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.releventimg, .releventtext 
+{
+	width: 600px;
+}
+.releventimg img {
+	width: 100%;
+}
+.button 
+{
+	color: red;
+	text-decoration: none;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+.button:hover 
+{
+	background: black;
+}
+.popup 
+{
+	background: white;
+	color: black;
+	width: 80%;
+	padding: 30px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+.overlay 
+{
+	top: 150px;
+	bottom: 0;
+	position: fixed;
+	visibility: hidden;
+}
+
+.overlay:target 
+{
+	visibility: visible;
+}
+main 
+{
+	max-width: 1200px;
+	padding: 40px 20px;
+	margin: 0 auto;
+}
+.special 
+{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.offers
+{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+.offer 
+{
+	background-color: #d7dbdd;
+	padding: 20px;
+	border-radius: 8px;
+	flex: 2;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.subscription 
+{
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+.sublevel 
+{
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+}
+.subscriptiondetail 
+{
+	background-color: #c0392b;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+button
+{
+	background-color: black;
+	padding: 10px;
+	color: white;
+}
+button:hover
+{
+	color: red;
+}
+
+
+
+/*responsive design*/
+@media (max-width: 768px)
+{
+	nav ul
+	{
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.offers
+	{
+		flex-direction: column;
+	}
+
+	.sublevel 
+	{
+		flex-direction: column;
+	}
+}
+
+
+@media screen and (max-width: 700px)
+{
+	.container
+	{
+		width: 85%;
+	}
+	.cartcol1 img 
+	{
+		width: 200px;
+		height: 150px;
+	}
+	
+
+
+}

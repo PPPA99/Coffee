@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.js">
+
+	<script type="text/javascript">
+		
+		function showPaymentTable()
+		{
+			document.getElementById('PaymentTable').style.visibility="visible";
+		}
+		function hidePaymentTable()
+		{
+			document.getElementById('PaymentTable').style.visibility="hidden";
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Show Hide Function</h1>
+
+	<fieldset>
+		<legend>Payment Section</legend>
+
+		<table>
+			<tr>
+				<td>Payment Type</td>
+				<input type="radio" name="rdopaymenttype" value="MPU" onClick="showPaymentTable()">MPU
+				<input type="radio" name="rdopaymenttype" value="MPU" onClick="showPaymentTable()">VISA
+				<input type="radio" name="rdopaymenttype" value="MPU" onClick="hidePaymentTable()">COD
+			</tr>
+
+			<tr>
+				<td>
+					<table id="PaymentTable" name="PaymentTable">
+
+						<tr>
+							<td>
+							Name <small>( as it appear on your card</small><br>
+
+							<input type="text" name="txtNameOnCard" placeholder="ex.Mg Mg"> <br>
+
+
+							CardNo <small>(no dashes or spaces)</small><br>
+
+
+							<input type="text" name="txtNameOnCard" placeholder="12356"><br>
+
+							Expire Date <small>(no dashes or spaces)</small><br>
+
+							<select name="cbomonth">
+								<option>Month</option>
+								<option>June</option>
+								<option>July</option>
+
+							</select>
+
+							<select name="cbomonth">
+								<option>Year</option>
+								<option>2025</option>
+								<option>2026</option>
+							</select>
+
+							</td>
+						</tr>
+						
+
+					</table>
+				</td>
+			</tr>
+
+		</table>
+
+	</fieldset>
+
+
+</body>
+</html>
